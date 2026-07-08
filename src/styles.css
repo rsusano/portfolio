@@ -169,3 +169,12 @@
   opacity: 0;
 }
 
+@utility dots-bg {
+  background-image: radial-gradient(oklch(1 0 0 / 8%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@utility mask-gradient {
+  mask-image: linear-gradient(to bottom, transparent, black 150px, black 95%, transparent);
+}
+
