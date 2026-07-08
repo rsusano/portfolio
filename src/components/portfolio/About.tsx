@@ -24,17 +24,13 @@ export function About() {
           ))}
         </div>
 
-        <div className="space-y-4 text-lg leading-relaxed text-muted-foreground md:col-span-7">
+        <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:col-span-7">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            A creative, detail-driven developer with{" "}
-            <span className="text-foreground">8+ years</span> of hands-on experience across
-            Shopify, WordPress, page builders, funnels, and e-commerce operations. Liquid
-            customization, API integrations, QA, VA support, and bilingual customer service —
-            I've worn every hat on the store.
+            Hi, I’m <span className="text-foreground font-semibold">Rafael</span>. I help Shopify brands turn traffic into paying customers through conversion-focused development, optimized funnels, strategic UX improvements, and technical SEO that drives long-term organic growth.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -42,10 +38,16 @@ export function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            I specialize in{" "}
-            <span className="text-foreground">high-converting</span> Shopify stores — custom-coded
-            sections, sales funnels, cart drawers, subscriptions, Klaviyo flows, and ERP
-            integrations. Fast, responsive, and obsessed with what actually converts.
+            Over the past <span className="text-foreground font-semibold">8+ years</span>, I’ve partnered with startups and 7 to 8-figure eCommerce brands to build, optimize, and scale high-performing stores that generate measurable revenue growth.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-foreground border-l-2 border-lime pl-3 italic text-sm md:text-base"
+          >
+            "You don't just need a developer. You need a Shopify growth partner who understands commerce, conversion, and scale."
           </motion.p>
         </div>
       </div>

@@ -2,12 +2,12 @@ import { motion } from "motion/react";
 import { SectionHeader } from "./About";
 
 const groups = [
-  { label: "Platforms", items: ["Shopify", "Shopify Plus", "Shopify Templates", "Shopify Apps", "WordPress", "WooCommerce"] },
-  { label: "Page Builders", items: ["PageFly", "GemPages", "Instant", "Replo", "Heyflow", "Kajabi", "Funnelish", "Elementor", "WPBakery"] },
-  { label: "Code", items: ["Liquid", "HTML", "CSS", "JavaScript", "API Integration", "Payment Integration"] },
-  { label: "Apps & Integrations", items: ["Klaviyo", "ReConvert", "UpCart", "AfterSell", "Odoo", "Dianxiaomi", "Mebang ERP"] },
-  { label: "Creative", items: ["Photoshop", "Figma", "Canva"] },
-  { label: "Ops & Collab", items: ["ClickUp", "Notion", "Trello", "Slack", "Google", "Discord"] },
+  { label: "E-commerce & Platforms", items: ["Shopify", "Shopify Plus", "Storefront API", "Admin API", "WordPress", "WooCommerce"] },
+  { label: "Page & Funnel Builders", items: ["Replo", "PageFly", "GemPages", "Funnelish", "Sales Funnels", "Advertorials"] },
+  { label: "Languages & Core Tech", items: ["Liquid", "JavaScript", "HTML", "CSS", "JSON", "React", "Node.js", "GraphQL"] },
+  { label: "Marketing & CRO", items: ["CRO", "A/B Testing", "Klaviyo", "Meta Pixel", "Conversion Tracking"] },
+  { label: "Features & SEO", items: ["SEO Optimization", "Bundling Systems", "Subscription Systems", "Payment Integrations"] },
+  { label: "Design & Tools", items: ["Figma", "Photoshop", "ClickUp", "Notion", "Slack"] },
 ];
 
 export function Stack() {

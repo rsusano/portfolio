@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const rotator = ["Shopify Stores", "Sales Funnels", "Landing Pages", "Custom Sections", "Cart Drawers"];
+const rotator = ["Shopify Stores", "Sales Funnels", "Landing Pages", "CRO Strategies", "Custom Sections", "API Integrations", "Optimized Speed"];
 
 export function Hero() {
   const [i, setI] = useState(0);
@@ -56,9 +56,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="hero-fadein mt-5 max-w-xl text-base leading-relaxed text-muted-foreground" style={{ animationDelay: "300ms" }}>
-            I'm <span className="text-foreground">Rafael Susano</span> — a full stack Shopify
-            developer, QA specialist and funnel builder with 8+ years turning ideas into stores
-            that actually convert. Custom Liquid, PageFly wizardry, and CRO baked in.
+            Hi, I’m <span className="text-foreground">Rafael</span>. I help Shopify brands turn traffic into paying customers through conversion-focused development, optimized funnels, strategic UX improvements, and technical SEO that drives long-term organic growth.
           </p>
 
           {/* CTA Buttons */}
@@ -120,7 +118,7 @@ export function Hero() {
                   ))}
                 </div>
                 <pre className="flex-1 overflow-x-auto px-3 py-3">
-{`{% assign dev = shop.developers.rafael %}\n`}<span className="text-muted-foreground">{`{%- capture role -%}`}</span>{`\n  `}<span className="text-lime">"Full Stack Shopify Dev"</span>{`\n`}<span className="text-muted-foreground">{`{%- endcapture -%}`}</span>{`\n\n`}<span className="text-signal">const</span>{` `}<span className="text-foreground">rafael</span>{` = {\n  role:      `}<span className="text-lime">"Shopify Expert"</span>{`,\n  stack:     [`}<span className="text-lime">"Liquid"</span>{`, `}<span className="text-lime">"JS"</span>{`, `}<span className="text-lime">"CSS"</span>{`],\n  builders:  [`}<span className="text-lime">"PageFly"</span>{`, `}<span className="text-lime">"GemPages"</span>{`,\n              `}<span className="text-lime">"Replo"</span>{`, `}<span className="text-lime">"Funnelish"</span>{`],\n  focus:     `}<span className="text-lime">"CRO + UX"</span>{`,\n  languages: [`}<span className="text-lime">"EN"</span>{`, `}<span className="text-lime">"ES"</span>{`],\n  status:    `}<span className="text-signal">"available"</span>{`,\n};\n\n`}<span className="text-muted-foreground">// ship something great</span>{`\nrafael.email(`}<span className="text-lime">"you"</span>{`);`}
+{`{% assign dev = shop.developers.rafael %}\n`}<span className="text-muted-foreground">{`{%- capture role -%}`}</span>{`\n  `}<span className="text-lime">"Full Stack Shopify Developer"</span>{`\n`}<span className="text-muted-foreground">{`{%- endcapture -%}`}</span>{`\n\n`}<span className="text-signal">const</span>{` `}<span className="text-foreground">rafael</span>{` = {\n  role:      `}<span className="text-lime">"Shopify Expert"</span>{`,\n  focus:     `}<span className="text-lime">"Funnels & CRO Expert"</span>{`,\n  tech:      [`}<span className="text-lime">"Liquid"</span>{`, `}<span className="text-lime">"JS"</span>{`, `}<span className="text-lime">"Figma"</span>{`],\n  builders:  [`}<span className="text-lime">"PageFly"</span>{`, `}<span className="text-lime">"Replo"</span>{`,\n              `}<span className="text-lime">"Funnelish"</span>{`],\n  mindset:   `}<span className="text-lime">"Business-first"</span>{`,\n  status:    `}<span className="text-signal">"available"</span>{`,\n};\n\n`}<span className="text-muted-foreground">// ship something great</span>{`\nrafael.email(`}<span className="text-lime">"you"</span>{`);`}
                 </pre>
               </div>
             </div>

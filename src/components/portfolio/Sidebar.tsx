@@ -86,9 +86,9 @@ export function Sidebar() {
           </div>
           <h2 className="mt-3 text-xl font-semibold">Rafael Susano</h2>
           <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
-            Shopify Expert · Full Stack Dev
+            Full Stack Shopify Developer
             <br />
-            Funnel Builder · QA Specialist
+            Shopify Expert · Funnels & CRO
           </p>
         </div>
 
@@ -258,9 +258,9 @@ export function MobileSidebar() {
         </div>
         <h2 className="mt-3 text-lg font-semibold">Rafael Susano</h2>
         <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
-          Shopify Expert · Full Stack Dev
+          Full Stack Shopify Developer
           <br />
-          Funnel Builder · QA Specialist
+          Shopify Expert · Funnels & CRO
         </p>
       </div>
 

@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Rafael Susano — Full Stack Shopify Developer" },
+      { title: "Rafael Susano — Full Stack Shopify Developer | Shopify Expert | Funnels & CRO Expert" },
       {
         name: "description",
         content:
-          "Full stack Shopify developer, funnel builder and QA specialist with 8+ years shipping high-converting stores, landing pages and custom Liquid sections.",
+          "Hi, I’m Rafael. I help Shopify brands turn traffic into paying customers through conversion-focused development, optimized funnels, strategic UX improvements, and technical SEO that drives long-term organic growth.",
       },
       { name: "author", content: "Rafael Susano" },
-      { property: "og:title", content: "Rafael Susano — Full Stack Shopify Developer" },
+      { property: "og:title", content: "Rafael Susano — Full Stack Shopify Developer | Shopify Expert | Funnels & CRO Expert" },
       {
         property: "og:description",
         content:
-          "High-converting Shopify stores, funnels and custom Liquid sections. 8+ years of e-commerce development, QA and CRO.",
+          "Hi, I’m Rafael. I help Shopify brands turn traffic into paying customers through conversion-focused development, optimized funnels, strategic UX improvements, and technical SEO.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -2,12 +2,12 @@ import { motion } from "motion/react";
 import { SectionHeader } from "./About";
 
 const services = [
-  { num: "01", title: "Shopify Store Development", body: "Full builds on Shopify & Shopify Plus. Custom themes, Liquid sections, cart drawer setups, subscriptions, bundling, and API integrations.", tags: ["Liquid", "Shopify Plus", "Theme Dev"] },
-  { num: "02", title: "Landing Pages & Funnels", body: "High-converting product pages tuned for Meta Ads traffic. Mobile-first, CRO principles, A/B tested — PageFly, GemPages, Replo or hand-coded.", tags: ["PageFly", "GemPages", "CRO"] },
-  { num: "03", title: "Custom Sections & Code", body: "Custom-coded Shopify sections in HTML, CSS and JavaScript. Interactive quizzes, advertorials, upsell blocks — anything the theme editor can't do.", tags: ["HTML", "CSS", "JS"] },
-  { num: "04", title: "QA & Bug Fixing", body: "Pre-launch QA across mobile, desktop and browsers. Layout bugs, broken links, spacing, and app conflicts hunted down before launch.", tags: ["QA", "Cross-browser"] },
-  { num: "05", title: "Email & Klaviyo Design", body: "Branded email templates designed in Figma and built in Klaviyo. Headers, CTA buttons, product layouts and responsive flows.", tags: ["Klaviyo", "Figma", "Email"] },
-  { num: "06", title: "E-commerce Operations", body: "Store admin, product uploads, order & dispute handling, supplier coordination, and bilingual (EN/ES) email support.", tags: ["VA Ops", "Bilingual"] },
+  { num: "01", title: "Shopify Theme & Plus Dev", body: "Custom Shopify theme development, advanced Figma to Shopify builds, and advanced API integrations for Shopify Plus.", tags: ["Liquid", "Theme Dev", "Shopify Plus"] },
+  { num: "02", title: "Landing Pages & Funnels", body: "High-converting product landing pages, advertorials, and optimized sales funnels built with Replo, PageFly, Gempages, or custom hand-coded.", tags: ["Replo", "PageFly", "Funnels"] },
+  { num: "03", title: "Speed & UX Optimization", body: "Store optimization for lightning fast page load speeds, responsive mobile performance, and UX clarity that reduces user friction.", tags: ["Speed", "Mobile Dev", "UX"] },
+  { num: "04", title: "CRO & Funnel Strategy", body: "Strategic CRO implementations to reduce cart abandonment, increase average order value (AOV), and design for purchase psychology.", tags: ["CRO", "A/B Testing", "AOV"] },
+  { num: "05", title: "Technical SEO & Schema", body: "Search optimization including custom schema markup, search intent site structure, and crawling performance improvements.", tags: ["SEO", "Schema", "Core Web Vitals"] },
+  { num: "06", title: "Custom Code & Integrations", body: "Custom functionality, payment integrations, custom checkout modifications, subscription workflows, and ERP synching.", tags: ["API", "Custom JS", "ERP"] },
 ];
 
 export function Services() {
