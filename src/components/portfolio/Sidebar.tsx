@@ -59,7 +59,7 @@ const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/rsusano" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/rafael-susano/" },
   { icon: SiUpwork, label: "Upwork", href: "https://www.upwork.com/freelancers/~01c2f2fbb4c2fa2b8b" },
-  { icon: Mail, label: "Email", href: "mailto:rafaelsusano@example.com" },
+  { icon: Mail, label: "Email", href: "mailto:rsusano123s@gmail.com" },
 ];
 
 export function Sidebar() {

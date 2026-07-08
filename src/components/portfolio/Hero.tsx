@@ -33,7 +33,7 @@ export function Hero() {
       <div className="mx-auto max-w-5xl px-5 lg:px-10">
         <div className="relative grid gap-10 xl:grid-cols-12 xl:gap-8">
         {/* Left column */}
-        <div className="xl:col-span-6 2xl:col-span-7">
+        <div className="xl:col-span-7 2xl:col-span-8">
           {/* Badge */}
           <div className="hero-fadein mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur" style={{ animationDelay: "0ms" }}>
             <span className="relative flex h-2 w-2">
@@ -97,7 +97,7 @@ export function Hero() {
         </div>
 
         {/* Code / Terminal card */}
-        <div className="hero-fadein xl:col-span-6 2xl:col-span-5" style={{ animationDelay: "250ms" }}>
+        <div className="hero-fadein xl:col-span-5 2xl:col-span-4" style={{ animationDelay: "250ms" }}>
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-lime/20 via-transparent to-signal/10 blur-2xl" />
             <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl aspect-square flex flex-col">
@@ -112,7 +112,7 @@ export function Hero() {
                   UTF-8 · LF
                 </span>
               </div>
-              <div className="flex-1 flex font-mono text-[11px] leading-[1.55] min-h-0">
+              <div className="flex-1 flex font-mono text-[10px] leading-[1.55] min-h-0">
                 <div className="select-none border-r border-border bg-background/50 px-2 py-3 text-right text-muted-foreground/60 shrink-0">
                   {Array.from({ length: 17 }, (_, k) => (
                     <div key={k}>{k + 1}</div>
@@ -169,7 +169,7 @@ export function Hero() {
                   {"rafael."}
                   <span className="text-signal">email</span>
                   {"("}
-                  <span className="text-lime">"rafael@rsusano.dev"</span>
+                  <span className="text-lime">"rsusano123s@gmail.com"</span>
                   {");"}
                 </pre>
               </div>

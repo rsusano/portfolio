@@ -32,7 +32,7 @@ export function Contact() {
 
           <div className="flex flex-col gap-2 md:col-span-5">
             <a
-              href="mailto:rafaelsusano@example.com"
+              href="mailto:rsusano123s@gmail.com"
               className="group flex items-center justify-between rounded-full bg-lime px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
             >
               Email me
