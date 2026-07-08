@@ -30,12 +30,12 @@ function Index() {
           <div className="absolute inset-0 dots-bg opacity-35 mask-gradient" />
           
           {/* Soft ambient glow behind mid page (About / Services / Experience) */}
-          <div className="absolute top-[30%] -left-[10%] h-[500px] w-[500px] rounded-full bg-lime/10 blur-[120px]" />
-          <div className="absolute top-[45%] -right-[15%] h-[600px] w-[600px] rounded-full bg-signal/5 blur-[150px]" />
+          <div className="absolute top-[25%] left-[5%] h-[500px] w-[500px] rounded-full bg-lime/10 blur-[130px]" />
+          <div className="absolute top-[42%] -right-[10%] h-[600px] w-[600px] rounded-full bg-signal/5 blur-[160px]" />
           
-          {/* Soft ambient glow behind bottom page (Reviews / Contact) */}
-          <div className="absolute bottom-[10%] -left-[20%] h-[700px] w-[700px] rounded-full bg-lime/8 blur-[160px]" />
-          <div className="absolute bottom-[5%] -right-[10%] h-[500px] w-[500px] rounded-full bg-signal/10 blur-[130px]" />
+          {/* Soft ambient glow behind bottom page (Reviews / Stack / Contact) */}
+          <div className="absolute bottom-[25%] left-[15%] h-[600px] w-[600px] rounded-full bg-lime/8 blur-[150px]" />
+          <div className="absolute bottom-[5%] -right-[5%] h-[500px] w-[500px] rounded-full bg-signal/8 blur-[130px]" />
         </div>
 
         {/* Sidebar profile/stats shown inline on mobile */}

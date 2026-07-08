@@ -64,7 +64,7 @@ const socials = [
 
 export function Sidebar() {
   return (
-    <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-[340px] flex-col border-r border-border bg-card/40 backdrop-blur-xl">
+    <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-[340px] flex-col border-r border-border bg-card/40 backdrop-blur-xl z-30">
       <div className="flex items-center justify-between border-b border-border px-5 py-3 font-mono text-[12px] uppercase tracking-widest text-muted-foreground">
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-lime animate-pulse" />
