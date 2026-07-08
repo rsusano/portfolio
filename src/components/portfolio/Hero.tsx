@@ -111,13 +111,13 @@ export function Hero() {
                   UTF-8 · LF
                 </span>
               </div>
-              <div className="flex font-mono text-[12px] leading-[1.55]">
+              <div className="flex font-mono text-[11px] leading-[1.55]">
                 <div className="select-none border-r border-border bg-background/50 px-2 py-3 text-right text-muted-foreground/60">
                   {Array.from({ length: 17 }, (_, k) => (
                     <div key={k}>{k + 1}</div>
                   ))}
                 </div>
-                <pre className="flex-1 overflow-x-auto px-3 py-3">
+                <pre className="flex-1 whitespace-pre-wrap break-words px-3 py-3">
 {`{% assign dev = shop.developers.rafael %}\n`}<span className="text-muted-foreground">{`{%- capture role -%}`}</span>{`\n  `}<span className="text-lime">"Full Stack Shopify Developer"</span>{`\n`}<span className="text-muted-foreground">{`{%- endcapture -%}`}</span>{`\n\n`}<span className="text-signal">const</span>{` `}<span className="text-foreground">rafael</span>{` = {\n  role:      `}<span className="text-lime">"Shopify Expert"</span>{`,\n  focus:     `}<span className="text-lime">"Funnels & CRO Expert"</span>{`,\n  tech:      [`}<span className="text-lime">"Liquid"</span>{`, `}<span className="text-lime">"JS"</span>{`, `}<span className="text-lime">"Figma"</span>{`],\n  builders:  [`}<span className="text-lime">"PageFly"</span>{`, `}<span className="text-lime">"Replo"</span>{`,\n              `}<span className="text-lime">"Funnelish"</span>{`],\n  mindset:   `}<span className="text-lime">"Business-first"</span>{`,\n  status:    `}<span className="text-signal">"available"</span>{`,\n};\n\n`}<span className="text-muted-foreground">// ship something great</span>{`\nrafael.email(`}<span className="text-lime">"you"</span>{`);`}
                 </pre>
               </div>
