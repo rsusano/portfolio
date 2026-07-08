@@ -30,9 +30,9 @@ export function Hero() {
       <div className="absolute inset-0 grid-bg" />
       <div className="pointer-events-none absolute inset-0 grain" />
 
-      <div className="relative grid gap-10 md:grid-cols-12 md:gap-6">
+      <div className="relative grid gap-10 lg:grid-cols-12 lg:gap-8">
         {/* Left column */}
-        <div className="md:col-span-7">
+        <div className="lg:col-span-7 xl:col-span-8">
           {/* Badge */}
           <div className="hero-fadein mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur" style={{ animationDelay: "0ms" }}>
             <span className="relative flex h-2 w-2">
@@ -47,7 +47,7 @@ export function Hero() {
             I build{" "}
             <span className="font-display italic text-lime text-glow">high-converting</span>
             <br />
-            <span className="inline-flex items-baseline">
+            <span className="inline-flex items-baseline whitespace-nowrap">
               <span className="font-mono text-2xl text-muted-foreground md:text-4xl">&gt;_</span>
               <span className="ml-3 text-lime">{txt}</span>
               <span className="ml-1 inline-block h-[0.85em] w-[3px] bg-lime animate-blink" />
@@ -56,7 +56,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="hero-fadein mt-5 max-w-xl text-base leading-relaxed text-muted-foreground" style={{ animationDelay: "300ms" }}>
-            Hi, I’m <span className="text-foreground">Rafael</span>. I help Shopify brands turn traffic into paying customers through conversion-focused development, optimized funnels, strategic UX improvements, and technical SEO that drives long-term organic growth.
+            Hi, I’m <span className="text-foreground font-semibold">Rafael</span>. I help Shopify brands turn traffic into paying customers through conversion-focused development, optimized funnels, strategic UX improvements, and technical SEO that drives long-term organic growth.
           </p>
 
           {/* CTA Buttons */}
@@ -96,7 +96,7 @@ export function Hero() {
         </div>
 
         {/* Code / Terminal card */}
-        <div className="hero-fadein md:col-span-5" style={{ animationDelay: "250ms" }}>
+        <div className="hero-fadein lg:col-span-5 xl:col-span-4" style={{ animationDelay: "250ms" }}>
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-lime/20 via-transparent to-signal/10 blur-2xl" />
             <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl">
