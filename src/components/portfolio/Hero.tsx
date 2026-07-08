@@ -30,7 +30,8 @@ export function Hero() {
       <div className="absolute inset-0 grid-bg" />
       <div className="pointer-events-none absolute inset-0 grain" />
 
-      <div className="relative grid gap-10 xl:grid-cols-12 xl:gap-8">
+      <div className="mx-auto max-w-5xl px-5 lg:px-10">
+        <div className="relative grid gap-10 xl:grid-cols-12 xl:gap-8">
         {/* Left column */}
         <div className="xl:col-span-7 2xl:col-span-8">
           {/* Badge */}
@@ -124,6 +125,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

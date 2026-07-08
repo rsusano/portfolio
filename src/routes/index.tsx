@@ -27,9 +27,7 @@ function Index() {
         {/* Sidebar profile/stats shown inline on mobile */}
         <MobileSidebar />
 
-        <div className="mx-auto max-w-5xl px-5 lg:px-10">
-          <Hero />
-        </div>
+        <Hero />
         <Marquee />
         <div className="mx-auto max-w-5xl px-5 lg:px-10 pb-24 xl:pb-0">
           <About />
