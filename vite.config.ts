@@ -11,8 +11,6 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       server: {
-        // Auto-detect Vercel environment so Nitro outputs to .vercel/output/
-        preset: process.env.VERCEL ? "vercel" : "node",
         entry: "./src/server.ts",
       },
     }),
