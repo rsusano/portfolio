@@ -100,7 +100,7 @@ export function Hero() {
         <div className="hero-fadein xl:col-span-5 2xl:col-span-4" style={{ animationDelay: "250ms" }}>
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-lime/20 via-transparent to-signal/10 blur-2xl" />
-            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl aspect-square flex flex-col">
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl aspect-square flex flex-col min-w-[340px] w-full">
               <div className="flex items-center gap-2 border-b border-border px-3 py-2 shrink-0">
                 <span className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
                 <span className="h-2.5 w-2.5 rounded-full bg-signal/70" />
@@ -118,7 +118,7 @@ export function Hero() {
                     <div key={k}>{k + 1}</div>
                   ))}
                 </div>
-                <pre className="flex-1 whitespace-pre-wrap break-words px-3 py-3 overflow-y-auto">
+                <pre className="flex-1 whitespace-pre-wrap break-words px-3 py-3 overflow-hidden">
                   <span className="text-muted-foreground">{"{% "}</span>
                   <span className="text-signal">assign</span>
                   {" dev = shop.developers.rafael "}
