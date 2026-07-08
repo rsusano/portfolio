@@ -100,7 +100,7 @@ export function Hero() {
         <div className="hero-fadein xl:col-span-5 2xl:col-span-4" style={{ animationDelay: "250ms" }}>
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-lime/20 via-transparent to-signal/10 blur-2xl" />
-            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl aspect-square flex flex-col">
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl flex flex-col">
               <div className="flex items-center gap-2 border-b border-border px-3 py-2 shrink-0">
                 <span className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
                 <span className="h-2.5 w-2.5 rounded-full bg-signal/70" />
@@ -121,7 +121,7 @@ export function Hero() {
                 <pre className="flex-1 whitespace-pre-wrap break-words px-3 py-3 overflow-y-auto">
                   <span className="text-muted-foreground">{"{% "}</span>
                   <span className="text-signal">assign</span>
-                  {" dev = shop.devs.rafael "}
+                  {" dev = shop.developers.rafael "}
                   <span className="text-muted-foreground">{"%}\n"}</span>
 
                   <span className="text-muted-foreground">{"{%- "}</span>
@@ -141,23 +141,27 @@ export function Hero() {
                   {" rafael = {\n"}
                   {"  role:      "}
                   <span className="text-lime">"Shopify Expert"</span>
-                  {",\n  focus:     "}
-                  <span className="text-lime">"Funnels & CRO Expert"</span>
-                  {",\n  tech:      ["}
+                  {",\n  stack:     ["}
                   <span className="text-lime">"Liquid"</span>
                   {", "}
                   <span className="text-lime">"JS"</span>
                   {", "}
-                  <span className="text-lime">"Figma"</span>
+                  <span className="text-lime">"CSS"</span>
                   {"],\n  builders:  ["}
                   <span className="text-lime">"PageFly"</span>
                   {", "}
+                  <span className="text-lime">"GemPages"</span>
+                  {",\n              "}
                   <span className="text-lime">"Replo"</span>
                   {", "}
                   <span className="text-lime">"Funnelish"</span>
-                  {"],\n  mindset:   "}
-                  <span className="text-lime">"Business-first"</span>
-                  {",\n  status:    "}
+                  {"],\n  focus:     "}
+                  <span className="text-lime">"CRO + UX"</span>
+                  {",\n  languages: ["}
+                  <span className="text-lime">"EN"</span>
+                  {", "}
+                  <span className="text-lime">"ES"</span>
+                  {"],\n  status:    "}
                   <span className="text-lime">"available"</span>
                   {"\n};\n\n"}
 
