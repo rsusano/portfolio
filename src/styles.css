@@ -92,7 +92,32 @@
       radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.86 0.22 130 / 0.12), transparent 60%),
       radial-gradient(ellipse 50% 40% at 90% 20%, oklch(0.78 0.15 60 / 0.08), transparent 60%);
   }
+
+  /* Custom scrollbar styling for webkit (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(1 0 0 / 12%);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--lime);
+  }
 }
+
+/* Custom scrollbar styling for Firefox */
+@supports (scrollbar-width: thin) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(1 0 0 / 12%) transparent;
+  }
+}
+
 
 @utility grain {
   position: relative;
