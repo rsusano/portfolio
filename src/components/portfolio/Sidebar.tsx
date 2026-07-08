@@ -226,3 +226,145 @@ function Bar({ name, pct }: { name: string; pct: number }) {
     </div>
   );
 }
+
+// Mobile version: same content rendered inline (not fixed) below the MobileBar
+export function MobileSidebar() {
+  return (
+    <div className="lg:hidden border-b border-border bg-card/40 backdrop-blur-sm px-5 py-6 space-y-5">
+      {/* Header */}
+      <div className="flex items-center justify-between font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+        <span className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-lime animate-pulse" />
+          rsusano<span className="text-foreground">.dev</span>
+        </span>
+        <span>v1 · 2026</span>
+      </div>
+
+      {/* Profile */}
+      <div className="flex flex-col items-center text-center">
+        <div className="relative">
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-lime to-signal opacity-60 blur-md" />
+          <img
+            src="https://avatars.githubusercontent.com/u/75257294?v=4"
+            alt="Rafael Susano"
+            className="relative h-20 w-20 rounded-full border-2 border-lime object-cover"
+          />
+          <span className="absolute bottom-1 right-1 h-3.5 w-3.5 rounded-full border-2 border-card bg-lime" />
+        </div>
+        <h2 className="mt-3 text-lg font-semibold">Rafael Susano</h2>
+        <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
+          Shopify Expert · Full Stack Dev
+          <br />
+          Funnel Builder · QA Specialist
+        </p>
+      </div>
+
+      {/* Identity */}
+      <dl className="space-y-2 rounded-xl border border-border bg-background/50 p-3 text-[13px]">
+        {([
+          [MapPin, "Residence", "Philippines"],
+          [Globe, "Timezone", "GMT+8"],
+          [Mail, "Contact", "EN · FIL"],
+        ] as const).map(([Icon, k, v], i) => (
+          <div key={i} className="flex items-center justify-between gap-2">
+            <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+              <Icon className="h-3.5 w-3.5" />
+              {k}
+            </span>
+            <span className="text-foreground">{v}</span>
+          </div>
+        ))}
+      </dl>
+
+      {/* Spoken languages */}
+      <div>
+        <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+          {"// languages"}
+        </p>
+        <div className="space-y-2">
+          {spokenLangs.map((l) => (
+            <Bar key={l.name} name={l.name} pct={l.pct} />
+          ))}
+        </div>
+      </div>
+
+      {/* Most used languages */}
+      <div>
+        <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+          {"// most used languages"}
+        </p>
+        <div className="space-y-2.5 rounded-xl border border-border bg-background/50 p-3">
+          {codeLangs.map((l) => (
+            <div key={l.name}>
+              <div className="mb-1 flex items-center justify-between font-mono text-[12px]">
+                <span className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full" style={{ background: l.color }} />
+                  <span style={{ color: l.color }}>{l.name}</span>
+                </span>
+                <span className="text-muted-foreground">{l.pct.toFixed(2)}%</span>
+              </div>
+              <div className="h-1.5 overflow-hidden rounded-full bg-border">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${Math.max(l.pct, 1)}%` }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.1, ease: "easeOut" }}
+                  className="h-full rounded-full"
+                  style={{ background: l.color }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Tech stack */}
+      <div>
+        <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+          {"// tech stack"}
+        </p>
+        <div className="grid grid-cols-8 gap-1.5">
+          {stack.map(({ name, Icon, color }) => (
+            <div
+              key={name}
+              title={name}
+              className="group relative grid aspect-square place-items-center rounded-md border border-border bg-background transition-all hover:border-lime hover:-translate-y-0.5"
+            >
+              <Icon className="h-4 w-4 transition-transform group-hover:scale-110" style={{ color }} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Socials */}
+      <div>
+        <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+          {"// find me"}
+        </p>
+        <div className="grid grid-cols-4 gap-2">
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noreferrer"
+              title={s.label}
+              className="group grid aspect-square place-items-center rounded-lg border border-border bg-background transition-all hover:border-lime hover:bg-lime hover:text-primary-foreground"
+            >
+              <s.icon className="h-4 w-4" />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* CTA */}
+      <a
+        href="#contact"
+        className="flex items-center justify-center gap-2 rounded-full bg-lime px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
+      >
+        <span className="h-1.5 w-1.5 rounded-full bg-primary-foreground/70" />
+        Available for work
+      </a>
+    </div>
+  );
+}

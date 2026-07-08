@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Sidebar } from "@/components/portfolio/Sidebar";
-import { RightNav, MobileBar } from "@/components/portfolio/RightNav";
+import { Sidebar, MobileSidebar } from "@/components/portfolio/Sidebar";
+import { RightNav, MobileBar, MobileNav } from "@/components/portfolio/RightNav";
 import { Hero } from "@/components/portfolio/Hero";
 import { Marquee } from "@/components/portfolio/Marquee";
 import { About } from "@/components/portfolio/About";
@@ -20,13 +20,18 @@ function Index() {
       <Sidebar />
       <MobileBar />
       <RightNav />
+      {/* Bottom floating nav on mobile/tablet */}
+      <MobileNav />
 
-      <main className="lg:pl-[340px] xl:pr-16">
+      <main className="lg:pl-[340px] xl:pr-16 pt-[57px] lg:pt-0">
+        {/* Sidebar profile/stats shown inline on mobile */}
+        <MobileSidebar />
+
         <div className="mx-auto max-w-5xl px-5 lg:px-10">
           <Hero />
         </div>
         <Marquee />
-        <div className="mx-auto max-w-5xl px-5 lg:px-10">
+        <div className="mx-auto max-w-5xl px-5 lg:px-10 pb-24 xl:pb-0">
           <About />
           <Services />
           <Experience />
