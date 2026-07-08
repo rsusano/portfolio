@@ -30,9 +30,9 @@ export function Hero() {
       <div className="absolute inset-0 grid-bg" />
       <div className="pointer-events-none absolute inset-0 grain" />
 
-      <div className="relative grid gap-10 lg:grid-cols-12 lg:gap-8">
+      <div className="relative grid gap-10 xl:grid-cols-12 xl:gap-8">
         {/* Left column */}
-        <div className="lg:col-span-7 xl:col-span-8">
+        <div className="xl:col-span-7 2xl:col-span-8">
           {/* Badge */}
           <div className="hero-fadein mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur" style={{ animationDelay: "0ms" }}>
             <span className="relative flex h-2 w-2">
@@ -96,7 +96,7 @@ export function Hero() {
         </div>
 
         {/* Code / Terminal card */}
-        <div className="hero-fadein lg:col-span-5 xl:col-span-4" style={{ animationDelay: "250ms" }}>
+        <div className="hero-fadein xl:col-span-5 2xl:col-span-4" style={{ animationDelay: "250ms" }}>
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-lime/20 via-transparent to-signal/10 blur-2xl" />
             <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl">
@@ -118,7 +118,7 @@ export function Hero() {
                   ))}
                 </div>
                 <pre className="flex-1 whitespace-pre-wrap break-words px-3 py-3">
-{`{% assign dev = shop.developers.rafael %}\n`}<span className="text-muted-foreground">{`{%- capture role -%}`}</span>{`\n  `}<span className="text-lime">"Full Stack Shopify Developer"</span>{`\n`}<span className="text-muted-foreground">{`{%- endcapture -%}`}</span>{`\n\n`}<span className="text-signal">const</span>{` `}<span className="text-foreground">rafael</span>{` = {\n  role:      `}<span className="text-lime">"Shopify Expert"</span>{`,\n  focus:     `}<span className="text-lime">"Funnels & CRO Expert"</span>{`,\n  tech:      [`}<span className="text-lime">"Liquid"</span>{`, `}<span className="text-lime">"JS"</span>{`, `}<span className="text-lime">"Figma"</span>{`],\n  builders:  [`}<span className="text-lime">"PageFly"</span>{`, `}<span className="text-lime">"Replo"</span>{`,\n              `}<span className="text-lime">"Funnelish"</span>{`],\n  mindset:   `}<span className="text-lime">"Business-first"</span>{`,\n  status:    `}<span className="text-signal">"available"</span>{`,\n};\n\n`}<span className="text-muted-foreground">// ship something great</span>{`\nrafael.email(`}<span className="text-lime">"you"</span>{`);`}
+{`{% assign dev = shop.devs.rafael %}\n`}<span className="text-muted-foreground">{`{%- capture role -%}`}</span>{`\n  `}<span className="text-lime">"Full Stack Shopify Dev"</span>{`\n`}<span className="text-muted-foreground">{`{%- endcapture -%}`}</span>{`\n\n`}<span className="text-signal">const</span>{` `}<span className="text-foreground">rafael</span>{` = {\n  role: "Shopify Expert",\n  focus: "Funnels & CRO Expert",\n  tech: ["Liquid", "JS", "Figma"],\n  builders: ["PageFly", "Replo", "Funnelish"],\n  mindset: "Business-first",\n  status: "available",\n};\n\n`}<span className="text-muted-foreground">// ship something great</span>{`\nrafael.email(`}<span className="text-lime">"you"</span>{`);`}
                 </pre>
               </div>
             </div>
