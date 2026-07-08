@@ -47,7 +47,7 @@ const skills = [
   { name: "JavaScript", pct: 88, color: "#F7DF1E" },
   { name: "Funnel Building", pct: 90, color: "#00B4D8" },
   { name: "CRO Expert", pct: 92, color: "#A3E635" },
-  { name: "Landing Pages", pct: 88, color: "#5391FE" },
+  { name: "Landing Pages", pct: 93, color: "#5391FE" },
   { name: "WordPress / Woo", pct: 82, color: "#21759B" },
   { name: "React", pct: 78, color: "#61DAFB" },
   { name: "TypeScript", pct: 72, color: "#3178C6" },
