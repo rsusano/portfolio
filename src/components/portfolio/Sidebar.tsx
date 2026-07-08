@@ -46,6 +46,7 @@ const skills = [
   { name: "HTML / CSS", pct: 92, color: "#E34F26" },
   { name: "JavaScript", pct: 88, color: "#F7DF1E" },
   { name: "Funnel Building", pct: 90, color: "#00B4D8" },
+  { name: "CRO", pct: 92, color: "#A3E635" },
   { name: "QA & Testing", pct: 88, color: "#5391FE" },
   { name: "WordPress / Woo", pct: 82, color: "#21759B" },
   { name: "React", pct: 78, color: "#61DAFB" },
@@ -88,7 +89,7 @@ export function Sidebar() {
           <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
             Full Stack Shopify Developer
             <br />
-            Shopify Expert · Funnels & CRO
+            Shopify Expert · Funnels & CRO Expert
           </p>
         </div>
 
@@ -260,7 +261,7 @@ export function MobileSidebar() {
         <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
           Full Stack Shopify Developer
           <br />
-          Shopify Expert · Funnels & CRO
+          Shopify Expert · Funnels & CRO Expert
         </p>
       </div>
 
