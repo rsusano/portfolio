@@ -33,7 +33,7 @@ export function Hero() {
       <div className="mx-auto max-w-5xl px-5 lg:px-10">
         <div className="relative grid gap-10 xl:grid-cols-12 xl:gap-8">
         {/* Left column */}
-        <div className="xl:col-span-7 2xl:col-span-8">
+        <div className="xl:col-span-6 2xl:col-span-7">
           {/* Badge */}
           <div className="hero-fadein mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur" style={{ animationDelay: "0ms" }}>
             <span className="relative flex h-2 w-2">
@@ -97,10 +97,10 @@ export function Hero() {
         </div>
 
         {/* Code / Terminal card */}
-        <div className="hero-fadein xl:col-span-5 2xl:col-span-4" style={{ animationDelay: "250ms" }}>
+        <div className="hero-fadein xl:col-span-6 2xl:col-span-5" style={{ animationDelay: "250ms" }}>
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-lime/20 via-transparent to-signal/10 blur-2xl" />
-            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl flex flex-col">
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl aspect-square flex flex-col">
               <div className="flex items-center gap-2 border-b border-border px-3 py-2 shrink-0">
                 <span className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
                 <span className="h-2.5 w-2.5 rounded-full bg-signal/70" />
@@ -165,7 +165,7 @@ export function Hero() {
                   <span className="text-lime">"available"</span>
                   {"\n};\n\n"}
 
-                  <span className="text-muted-foreground">// ship something great\n</span>
+                  <span className="text-muted-foreground">// ship something great{"\n"}</span>
                   {"rafael."}
                   <span className="text-signal">email</span>
                   {"("}
