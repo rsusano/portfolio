@@ -40,13 +40,18 @@ const spokenLangs = [
   { name: "Filipino", pct: 100 },
 ];
 
-// Sourced from GitHub "Most Used Languages"
-const codeLangs = [
-  { name: "Liquid", pct: 72.20, color: "#00B4D8" },
-  { name: "JavaScript", pct: 22.52, color: "#F7DF1E" },
-  { name: "CSS", pct: 5.00, color: "#B5B5B5" },
-  { name: "PowerShell", pct: 0.24, color: "#5391FE" },
-  { name: "Batchfile", pct: 0.05, color: "#95BF47" },
+// Skill expertise levels
+const skills = [
+  { name: "Shopify / Liquid", pct: 95, color: "#95BF47" },
+  { name: "HTML / CSS", pct: 92, color: "#E34F26" },
+  { name: "JavaScript", pct: 88, color: "#F7DF1E" },
+  { name: "Funnel Building", pct: 90, color: "#00B4D8" },
+  { name: "QA & Testing", pct: 88, color: "#5391FE" },
+  { name: "WordPress / Woo", pct: 82, color: "#21759B" },
+  { name: "React", pct: 78, color: "#61DAFB" },
+  { name: "TypeScript", pct: 72, color: "#3178C6" },
+  { name: "Node.js", pct: 68, color: "#5FA04E" },
+  { name: "Figma / Design", pct: 75, color: "#F24E1E" },
 ];
 
 const socials = [
@@ -116,13 +121,13 @@ export function Sidebar() {
           </div>
         </div>
 
-        {/* Most used languages (GitHub) */}
+        {/* Expertise */}
         <div>
           <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-            {"// most used languages"}
+            {"// expertise"}
           </p>
           <div className="space-y-2.5 rounded-xl border border-border bg-background/50 p-3">
-            {codeLangs.map((l) => (
+            {skills.map((l) => (
               <div key={l.name}>
                 <div className="mb-1 flex items-center justify-between font-mono text-[12px]">
                   <span className="flex items-center gap-2">
@@ -132,12 +137,12 @@ export function Sidebar() {
                     />
                     <span style={{ color: l.color }}>{l.name}</span>
                   </span>
-                  <span className="text-muted-foreground">{l.pct.toFixed(2)}%</span>
+                  <span className="text-muted-foreground">{l.pct}%</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-border">
                   <motion.div
                     initial={{ width: 0 }}
-                    whileInView={{ width: `${Math.max(l.pct, 1)}%` }}
+                    whileInView={{ width: `${l.pct}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1.1, ease: "easeOut" }}
                     className="h-full rounded-full"
@@ -288,25 +293,25 @@ export function MobileSidebar() {
         </div>
       </div>
 
-      {/* Most used languages */}
+      {/* Expertise */}
       <div>
         <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-          {"// most used languages"}
+          {"// expertise"}
         </p>
         <div className="space-y-2.5 rounded-xl border border-border bg-background/50 p-3">
-          {codeLangs.map((l) => (
+          {skills.map((l) => (
             <div key={l.name}>
               <div className="mb-1 flex items-center justify-between font-mono text-[12px]">
                 <span className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full" style={{ background: l.color }} />
                   <span style={{ color: l.color }}>{l.name}</span>
                 </span>
-                <span className="text-muted-foreground">{l.pct.toFixed(2)}%</span>
+                <span className="text-muted-foreground">{l.pct}%</span>
               </div>
               <div className="h-1.5 overflow-hidden rounded-full bg-border">
                 <motion.div
                   initial={{ width: 0 }}
-                  whileInView={{ width: `${Math.max(l.pct, 1)}%` }}
+                  whileInView={{ width: `${l.pct}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.1, ease: "easeOut" }}
                   className="h-full rounded-full"
