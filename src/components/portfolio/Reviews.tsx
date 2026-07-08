@@ -55,8 +55,12 @@ export function Reviews() {
     <section id="reviews" className="relative py-14">
       <SectionHeader num="05" tag="reviews" title="What clients say" italic="after we ship." />
 
-      <div className="mt-8 rounded-2xl border border-border bg-card p-6 md:p-8">
-        <div className="mb-6 flex items-center justify-between">
+      <div className="mt-8 rounded-2xl border border-border bg-card/40 backdrop-blur-md p-6 md:p-8 relative overflow-hidden">
+        {/* Glow Effects */}
+        <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-lime/10 blur-3xl pointer-events-none" />
+        <div className="absolute -left-20 -bottom-20 h-48 w-48 rounded-full bg-signal/5 blur-3xl pointer-events-none" />
+
+        <div className="relative mb-6 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="flex">
               {[...Array(5)].map((_, k) => (

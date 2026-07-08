@@ -16,8 +16,8 @@ export function Experience() {
     <section id="work" className="relative py-14">
       <SectionHeader num="04" tag="experience" title="Eight years," italic="many stores, zero drama." />
 
-      <ol className="relative mt-8">
-        <span className="absolute left-0 top-0 hidden h-full w-px bg-border md:block md:left-[26%]" />
+      <ol className="relative mt-8 space-y-2">
+        <span className="absolute left-0 top-0 hidden h-[95%] w-[2px] bg-gradient-to-b from-lime/50 via-border/55 to-transparent md:block md:left-[26%]" />
         {jobs.map((j, i) => (
           <motion.li
             key={i}
@@ -25,16 +25,16 @@ export function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ delay: i * 0.04 }}
-            className="relative grid gap-2 border-b border-border py-5 md:grid-cols-[26%_1fr] md:gap-8"
+            className="group relative grid gap-2 border-b border-border/40 py-6 md:grid-cols-[26%_1fr] md:gap-8 transition-all hover:bg-card/30 rounded-xl px-4 -mx-4"
           >
             <div>
-              <span className="font-mono text-[10px] uppercase tracking-widest text-lime">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-lime group-hover:text-glow transition-all duration-300">
                 {j.date}
               </span>
             </div>
             <div className="relative">
-              <span className="absolute -left-[calc(74%+7px)] top-2 hidden h-2 w-2 rounded-full bg-lime md:block" />
-              <h3 className="text-base font-medium">{j.role}</h3>
+              <span className="absolute -left-[calc(74%+10px)] top-2.5 hidden h-3 w-3 rounded-full border-2 border-background bg-lime shadow-[0_0_8px_var(--lime)] md:block group-hover:scale-125 transition-transform duration-300" />
+              <h3 className="text-base font-medium group-hover:text-lime transition-colors duration-300">{j.role}</h3>
               <p className="mt-0.5 font-mono text-[12px] text-muted-foreground">{j.company}</p>
               <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                 {j.bullets.map((b, k) => (
