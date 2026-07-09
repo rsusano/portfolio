@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const rotator = ["Shopify Stores", "Sales Funnels", "Landing Pages", "CRO Strategies", "Custom Sections", "API Integrations", "Optimized Speed"];
+const rotator = ["Shopify Stores", "Custom Themes", "Sales Funnels", "Landing Pages", "CRO Strategies", "Custom Sections", "API Integrations", "Optimized Speed"];
 
 export function Hero() {
   const [i, setI] = useState(0);
@@ -83,8 +83,8 @@ export function Hero() {
           <dl className="hero-fadein mt-8 grid max-w-lg grid-cols-3 gap-4 border-t border-border pt-5" style={{ animationDelay: "550ms" }}>
             {[
               ["8+", "Years shipping"],
-              ["50+", "Stores launched"],
-              ["6", "Companies"],
+              ["100+", "Stores launched"],
+              ["10+", "Companies"],
             ].map(([n, l]) => (
               <div key={l}>
                 <dt className="font-display text-3xl text-lime">{n}</dt>
